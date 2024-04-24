@@ -1,0 +1,54 @@
+{
+  "_comment": "POST party",
+  "party": {
+    "party_id": "P10001",
+    "party_enum_type_id": "CUSTOMER"
+  },
+  "_comment": "POST person",
+  "person": {
+    "party_id": "P10001",
+    "first_name": "John",
+    "middle_name": "Doe",
+    "last_name": "Smith",
+    "gender": "M",
+    "birth_date": "1990-05-15",
+    "marital_status_enum_id": "MARRIED",
+    "employment_status_enum_id": "EMPLOYED",
+    "occupation": "Software Engineer"
+  },
+  "_comment": "POST order",
+  "order": {
+    "order_name": "Order123",
+    "placed_date": "2023-01-10T08:00:00",
+    "approved_date": "2023-01-12T10:30:00",
+    "status_id": "OrderPlaced",
+    "party_id": "P10001",
+    "currency_uom_id": "USD",
+    "product_store_id": "Store123",
+    "sales_channel_enum_id": "ONLINE",
+    "grand_total": 150.00,
+    "completed_date": "2023-01-15T12:00:00"
+  },
+  "_comment": "POST orderItem",
+  "orderItems": {
+    "order_id": "1713604513671518",
+    "order_items": [
+      {
+        "order_item_seq_id": 1,
+        "product_id": "PD10001",
+        "item_description": "Product A",
+        "quantity": 2,
+        "unit_amount": 50.00,
+        "item_type_enum_id": "PHYSICAL"
+      },
+      {
+        "order_item_seq_id": 2,
+        "product_id": "PD10002",
+        "item_description": "Product B",
+        "quantity": 1,
+        "unit_amount": 30.00,
+        "item_type_enum_id": "DIGITAL"
+      }
+    ]
+  }
+}
